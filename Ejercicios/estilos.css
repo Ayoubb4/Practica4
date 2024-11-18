@@ -1,0 +1,602 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Baloo Da 2', 'Roboto', sans-serif;
+    color: #333;
+}
+
+.cabecera {
+    background-color: #333;
+    color: #fff;
+    width: 100%;
+}
+
+.cabecera-contenido {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.cabecera .logo img {
+    width: 60px;
+}
+
+.menu-principal ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li a.activo {
+    background-color: #ffcc00;
+    color: black;
+}
+
+.menu-principal ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+.menu-principal ul li a:hover {
+    background-color: #ffcc00;
+    color: #333;
+}
+
+ul.menu-redes-sociales {
+    display: flex;
+    gap: 10px;
+    list-style: none;
+    justify-content: right;
+}
+
+ul.menu-redes-sociales-dentro {
+    display: flex;
+    gap: 10px;
+    list-style: none;
+    justify-content: right;
+    padding-top: 150px;
+    margin: 0;
+}
+
+.icono-red {
+    width: 32px;
+    height: 32px;
+    display: inline-block;
+    background-image: url('../Materiales/materiales/imagenes_practica_final/32pixel-icons.png');
+    background-size: 506px 122px;
+    border-radius: 50%;
+    transition: transform 0.5s ease, filter 0.3s ease;
+}
+
+#facebook {
+    background-position: -178.5px -7px;
+}
+
+#facebook:hover {
+    background-position: -178.5px -81px;
+}
+
+#email {
+    background-position: -7px -7px;
+}
+
+#email:hover {
+    background-position: -7px -81.5px;
+}
+
+#google {
+    background-position: -121.5px -6px;
+}
+
+#google:hover {
+    background-position: -121.5px -80px;
+}
+
+#twitter {
+    background-position: -292.5px -7px;
+}
+
+#twitter:hover {
+    background-position: -292.5px -82px;
+}
+
+#linkedin {
+    background-position: -350.5px -7px;
+}
+
+#linkedin:hover {
+    background-position: -350.5px -81.5px;
+}
+
+#github {
+    background-position: -408px -7px;
+}
+
+#github:hover {
+    background-position: -408px -81.5px;
+}
+
+
+/* Footer */
+
+.pie-pagina {
+    background-color: rgb(61, 61, 60);
+    /* Fondo oscuro */
+    text-align: center;
+    padding: 30px;
+    color: #fff;
+}
+
+.enlaces-footer {
+    display: flex;
+    justify-content: center;
+    /* Centra horizontalmente */
+    gap: 50px;
+    /* Espacio entre las columnas */
+}
+
+.listasul {
+    list-style-type: none;
+    /* Sin viñetas */
+    padding: 0;
+}
+
+.listasul li {
+    margin-bottom: 10px;
+    /* Espacio entre enlaces */
+}
+
+.listasul li a {
+    color: yellow;
+    /* Color del texto */
+    text-decoration: underline;
+    /* Subrayado */
+    font-style: italic;
+    /* Cursiva */
+    font-weight: normal;
+    /* Peso normal */
+}
+
+.listasul li a:hover {
+    text-decoration: none;
+    /* Quitar subrayado al pasar el mouse */
+}
+
+.nota-pie {
+    color: #666;
+    /* Texto gris */
+    font-size: 12px;
+    margin-top: 20px;
+}
+
+
+/* Sección de bienvenida */
+
+.texto-bienvenida2formato {
+    text-align: center;
+    background-image: url('../Materiales/materiales/imagenes_practica_final/cabecera1.jpg');
+    color: white;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.estiloh1 {
+    text-shadow: 2px 2px 0px black;
+}
+
+.texto-bienvenida2formato .izq {
+    padding-left: 360px;
+    margin-right: 40px;
+}
+
+.texto-bienvenida2formato .dcha h1 {
+    margin: 0;
+    font-size: 1.5em;
+}
+
+.texto-bienvenida2formato .dcha p {
+    margin: 0;
+}
+
+.texto-bienvenida {
+    text-align: center;
+    padding: 15%;
+    background-image: url('../Materiales/materiales/imagenes_practica_final/cabecera1.jpg');
+    color: #333;
+}
+
+
+/* Contenido principal */
+
+.contenido-principal {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.sobre-mi,
+.portafolio {
+    margin-bottom: 40px;
+}
+
+.portafolio .galeria {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.galeria-item {
+    border: 1px solid #ddd;
+    background-color: #f9f9f9;
+    text-align: center;
+    transition: transform 0.3s;
+    justify-content: center;
+    padding: 2px;
+    margin-bottom: 20px;
+}
+
+.galeria-item:hover {
+    transform: scale(1.05);
+    box-shadow: 2px 2px 2px black;
+    transition: 0.5s;
+}
+
+.galeria-item img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+span.nombrelogo {
+    text-decoration: none;
+    color: white;
+}
+
+a.fotos_portfolio {
+    color: #ffcc00;
+}
+
+
+/* Catálogo */
+
+.catalogo {
+    width: 100%;
+    max-width: 1100px;
+    margin: 0 auto;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+h1.catalogo_title {
+    text-align: center;
+    color: grey;
+    font-size: 50px;
+    font-style: italic;
+    font-weight: bold;
+}
+
+.catalogo th,
+.catalogo td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid black;
+}
+
+.catalogo thead th {
+    background-color: #ffcc00;
+    color: #333;
+    font-weight: bold;
+    border-bottom: 1px solid black;
+}
+
+.catalogo tbody tr:nth-child(odd) {
+    background-color: white;
+}
+
+.catalogo tbody tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.btn-comprar {
+    display: inline-block;
+    padding: 8px 12px;
+    background-color: #ffcc00;
+    color: #333;
+    text-decoration: none;
+    border-radius: 20px;
+    font-weight: bold;
+    transition: background 0.3s, color 0.3s;
+    border: 1px solid transparent;
+}
+
+.btn-comprar:hover {
+    background-color: #fff;
+    color: #333;
+    border: 1px solid #ffcc00;
+}
+
+.fotosproductos img {
+    width: 70px;
+    height: 70px;
+    border-radius: 5px;
+    background-color: #ffffff;
+}
+
+
+/* Inspiración */
+
+.seccion-inspiracion {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.titulo-inspiracion {
+    font-size: 2.5em;
+    color: #333;
+    font-family: 'Baloo Da 2', sans-serif;
+    margin-bottom: 20px;
+}
+
+.descripcion-inspiracion {
+    font-size: 1.2em;
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.inspiracion-quote {
+    background-color: #f9f6eb;
+    border-right: 8px solid yellow;
+    padding: 20px;
+    font-size: 1.2em;
+    font-style: italic;
+    color: #333;
+    margin: 20px 0;
+    margin-left: 200px;
+    text-align: center;
+    position: relative;
+}
+
+.inspiracion-quote blockquote {
+    margin: 0;
+    padding: 0;
+}
+
+span.textolinks {
+    text-decoration: none;
+    color: black;
+    font-weight: normal;
+}
+
+.citas-lista {
+    list-style-type: none;
+    padding: 0;
+}
+
+.citas-lista-logo {
+    font-style: italic;
+    font-family: 'Arial', sans-serif;
+}
+
+.citas-lista-logo::before {
+    content: "";
+    background-image: url('../Materiales/materiales/imagenes_practica_final/libro.png');
+    background-size: 30px 30px;
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    margin-right: 8px;
+}
+
+.fuentes-lista {
+    list-style-type: disc;
+    padding: 0;
+}
+
+.fuentes-lista li {
+    margin-bottom: 10px;
+}
+
+.fuentes-lista a {
+    color: #e5cb40;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.fuentes-lista a:hover {
+    text-decoration: underline;
+}
+
+.codigo-ejemplo {
+    background-color: #f4f4f4;
+    padding: 20px;
+    border-radius: 5px;
+    border-left: 5px solid #82a100;
+    font-family: 'Courier New', monospace;
+    color: #333;
+    margin-top: 20px;
+    font-size: 1em;
+}
+
+.codigo-ejemplo pre {
+    margin: 0;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+}
+
+.tituloscode {
+    text-decoration: underline;
+}
+
+
+/* Formulario */
+
+.checkbox-group {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.custom-checkbox {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.textocheck {
+    margin: 0;
+    line-height: 1;
+    display: inline;
+}
+
+.custom-checkbox input {
+    opacity: 0;
+    position: absolute;
+}
+
+.checkmark {
+    width: 30px;
+    height: 30px;
+    background-color: #fff;
+    border: 2px solid #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+    width: 10px;
+    height: 40px;
+    border: solid blue;
+    border-width: 0 5px 5px 0;
+    transform: rotate(45deg);
+}
+
+.custom-checkbox input:checked+.checkmark:after {
+    display: block;
+    margin-bottom: 17px;
+    margin-left: 15px;
+}
+
+.form-container {
+    width: 100%;
+    max-width: 600px;
+    padding: 20px;
+    background-color: #ffcc00;
+    border-radius: 10px;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.3);
+    margin: 50px auto;
+}
+
+.formcontact h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+input::placeholder,
+textarea::placeholder {
+    color: yellow;
+    font-weight: bold;
+    opacity: 1;
+}
+
+fieldset {
+    border: none;
+    margin-bottom: 20px;
+}
+
+legend {
+    font-weight: bold;
+    margin-bottom: 10px;
+    display: block;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input,
+select,
+textarea {
+    width: calc(100% - 20px);
+    margin-bottom: 15px;
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+select {
+    background-color: #fff;
+    color: rgb(192, 192, 1);
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+select option {
+    background-color: #fff;
+    color: rgb(192, 192, 1);
+}
+
+textarea {
+    resize: none;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+    outline: none;
+    border-color: #007bff;
+    box-shadow: 0 0 5px #007bff;
+}
+
+.button-group {
+    display: flex;
+    justify-content: space-between;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+button.enviar {
+    background-color: green;
+    color: white;
+}
+
+button.enviar:hover {
+    background-color: #005500;
+}
+
+button.borrar {
+    background-color: red;
+    color: white;
+}
+
+button.borrar:hover {
+    background-color: #8b0000;
+}
