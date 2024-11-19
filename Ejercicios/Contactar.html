@@ -13,8 +13,8 @@
 <body>
     <header class="cabecera">
         <div class="cabecera-contenido">
-            <a href="Index.html" class="logo">
-                <img src="/Practica 4/Materiales/materiales/imagenes_practica_final/logo_ico.png" alt="Logo">
+            <a  class="headerformat" href="Index.html" class="logo">
+                <img src="/Practica 4/Materiales/materiales/imagenes_practica_final/logo_peq.png" alt="Logo">
                 <span class="nombrelogo">Ayoub Misbah Fatouh</span>
             </a>
             <nav class="menu-principal">
@@ -22,7 +22,7 @@
                     <li><a title="Inicio" href="Index.html">Inicio</a></li>
                     <li><a title="Diseño Gráfico" href="Diseño.html">Diseño gráfico</a></li>
                     <li><a title="Inspiracion" href="Inspiracion.html">Inspiración</a></li>
-                    <li><a title="Sobre Mí" href="SobreMi.html">Sobre mí</a></li>
+                    <li><a title="Sobre Mí" href="#">Sobre mí</a></li>
                     <li><a class="activo" title="Contactar" href="Contactar.html">Contactar</a></li>
                 </ul>
             </nav>
@@ -64,35 +64,41 @@
         <form class="formcontact">
             <h1>Contactar</h1>
             <fieldset>
-                <legend>Datos personales:</legend>
-                <label for="nombre">Nombre:</label>
-                <input type="text" id="nombre" name="nombre" placeholder="Escribe tu nombre" required>
+                <div class="legend-container">
+                    <legend><h2>Datos personales:</h2></legend>
+                    <div class="linea-derecha"></div>
+                  </div>
+                <label for="nombre">Nombre:<input type="text" id="nombre" name="nombre" placeholder="Escribe tu nombre" required></label>
+                
 
-                <label for="apellidos">Apellidos:</label>
-                <input type="text" id="apellidos" name="apellidos" placeholder="Escribe tus apellidos" required>
+                <label for="apellidos">Apellidos: <input type="text" id="apellidos" name="apellidos" placeholder="Escribe tus apellidos" required></label>
+                
 
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" placeholder="Escribe tu email" required>
+                <label for="email">Email:<input type="email" id="email" name="email" placeholder="Escribe tu email" required></label>
+                
 
-                <label for="telefono">Teléfono:</label>
-                <input type="tel" id="telefono" name="telefono" placeholder="Escribe tu teléfono" required>
+                <label for="telefono">Teléfono: <input type="tel" id="telefono" name="telefono" placeholder="Escribe tu teléfono" required></label>
+                
 
-                <label for="nacimiento">Fecha de nacimiento:</label>
-                <input type="date" id="nacimiento" name="nacimiento" required>
+                <label for="nacimiento">Fecha de nacimiento:<input type="date" id="nacimiento" name="nacimiento" required></label>
+                
             </fieldset>
 
             <fieldset>
-                <legend>Otros datos:</legend>
-                <label for="motivo">Por qué quieres contactar:</label>
-                <select id="motivo" name="motivo" required>
+                <div class="legend-container">
+                    <legend><h2>Otros datos:</h2></legend>
+                    <div class="linea-derecha"></div>
+                  </div>
+                <label for="motivo">Por qué quieres contactar:<select id="motivo" name="motivo" required>
                     <option value="" disabled selected>Selecciona una opción</option>
                     <option value="proyecto">Ofrecer un proyecto</option>
                     <option value="consulta">Consulta general</option>
                     <option value="soporte">Soporte técnico</option>
-                </select>
+                </select></label>
+                
 
-                <label for="mensaje">Mensaje:</label>
-                <textarea id="mensaje" name="mensaje" rows="5" placeholder="Escribe tu mensaje" required></textarea>
+                <label for="mensaje">Mensaje:                <textarea id="mensaje" name="mensaje" rows="5" placeholder="Escribe tu mensaje" required></textarea>
+                </label>
 
                 <div class="checkbox-group">
                     <label class="custom-checkbox">
@@ -110,6 +116,8 @@
 
             <div class="button-group">
                 <button type="submit" class="btn enviar">Enviar</button>
+            </div>
+            <div class="button-group">
                 <button type="reset" class="btn borrar">Borrar datos</button>
             </div>
         </form>

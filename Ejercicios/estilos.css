@@ -15,6 +15,10 @@ body {
     width: 100%;
 }
 
+.headerformat{
+    text-decoration: none;
+}
+
 .cabecera-contenido {
     display: flex;
     justify-content: space-between;
@@ -259,7 +263,7 @@ ul.menu-redes-sociales-dentro {
 }
 
 span.nombrelogo {
-    text-decoration: none;
+    text-decoration: none black;
     color: white;
 }
 
@@ -419,6 +423,11 @@ span.textolinks {
     text-decoration: underline;
 }
 
+.downtextlink{
+    color: #e5cb40;
+    text-decoration: underline;
+    font-weight: bold;
+}
 .codigo-ejemplo {
     background-color: #f4f4f4;
     padding: 20px;
@@ -453,6 +462,7 @@ span.textolinks {
     display: inline-flex;
     align-items: center;
     gap: 10px;
+    justify-content: flex-start;
 }
 
 .textocheck {
@@ -482,7 +492,7 @@ span.textolinks {
     display: none;
     width: 10px;
     height: 40px;
-    border: solid blue;
+    border: solid green;
     border-width: 0 5px 5px 0;
     transform: rotate(45deg);
 }
@@ -497,7 +507,7 @@ span.textolinks {
     width: 100%;
     max-width: 600px;
     padding: 20px;
-    background-color: #ffcc00;
+    background-color: #e8c841;
     border-radius: 10px;
     box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.3);
     margin: 50px auto;
@@ -511,7 +521,7 @@ span.textolinks {
 
 input::placeholder,
 textarea::placeholder {
-    color: yellow;
+    color: rgb(192, 192, 1);
     font-weight: bold;
     opacity: 1;
 }
@@ -519,26 +529,36 @@ textarea::placeholder {
 fieldset {
     border: none;
     margin-bottom: 20px;
+    position: relative;
 }
-
+.legend-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-weight: normal;
+  }
 legend {
     font-weight: bold;
     margin-bottom: 10px;
-    display: block;
+    display: inline-block;
+    margin-right: 10px;
+
 }
 
 label {
-    display: block;
+    display: flex;
     margin-bottom: 5px;
     font-weight: bold;
+    justify-content: space-between;
 }
-
 input,
 select,
 textarea {
-    width: calc(100% - 20px);
     margin-bottom: 15px;
+    display: flex;
+    padding-left: 10px;
     padding: 10px;
+    width: 60%;
     font-size: 1rem;
     border: 1px solid #ccc;
     border-radius: 5px;
@@ -546,10 +566,15 @@ textarea {
 
 select {
     background-color: #fff;
+    align-items: center;
     color: rgb(192, 192, 1);
     border: 1px solid #ccc;
     border-radius: 5px;
     padding: 10px;
+    width: 60%;
+}
+textarea#mensaje{
+    padding-bottom: 100px;
 }
 
 select option {
@@ -586,6 +611,8 @@ button {
 button.enviar {
     background-color: green;
     color: white;
+    width: 100%;
+    margin: 5px;
 }
 
 button.enviar:hover {
@@ -593,10 +620,30 @@ button.enviar:hover {
 }
 
 button.borrar {
-    background-color: red;
+    background-color: #ff005278;
     color: white;
+    width: 100%;
+    margin: 5px;
+
 }
 
 button.borrar:hover {
     background-color: #8b0000;
+}
+
+input#nacimiento{
+    width: calc(100% - 20px);
+    margin-bottom: 15px;
+    width: 60%;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    color: #e8c841;
+}
+
+.linea-derecha {
+    flex-grow: 1;
+    height: 2px;
+    background-color: #000;
+    margin-left: 10px; 
 }
